@@ -10,13 +10,15 @@ public class ArrayDictionaryDriver {
         System.out.println(player.size()); // testing the size when the ArrayDictionary is not null
         System.out.println(player.isEmpty()); // testing the isEmpty method when the ArrayDictionary is not empty (should return false)
         System.out.println(player.contains(2)); // testing the contains method (should print true)
+        System.out.println(player.keys()); // testing the keys method with a filled ArrayDictionary (should print [1, 2, 3]
+        System.out.println(player.values()); // testing the values method with a filled ArrayDictionary (should print [Bob, Sally, Fred]
+        System.out.println(player.get(1)); // testing the get method (should print Bob)
+        System.out.println( player.remove(2)); // testing the remove method (should return bob)
         player.remove(2); // testing the remove method
-        System.out.println(player.contains(2)); // testing the contains method on a non-existent key (should print false)
-        System.out.println(player.keys()); // testing the keys method with a filled ArrayDictionary (should print [2, 3]
-        System.out.println(player.values()); // testing the values method with a filled ArrayDictionary (should print [Sally, Fred]
-        player.remove(1); // removing all the buckets
         player.remove(3);
         System.out.println(player.size()); // testing the size method on an empty ArrayDictionary
+        System.out.println(player.contains(2)); // testing the contains method on a non-existent key (should print false)
+        System.out.println(player.get(1)); // testing the get method on an empty key (should return null)
 
     }
 }
